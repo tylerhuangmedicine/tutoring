@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tyler | MCAT & Admissions Tutor</title>
+  <meta name="description" content="Tyler — Cornell senior (Chemistry & Physics). 520 MCAT. T20 MD admit. MCAT tutoring, personal statement & secondary editing, and advising." />
+  <meta name="author" content="Tyler" />
+
+  <!-- Open Graph (nice previews when sharing) -->
+  <meta property="og:title" content="Tyler | MCAT & Admissions Tutor" />
+  <meta property="og:description" content="520 MCAT • Cornell • T20 MD admit • MCAT tutoring + application essays + advising" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg: #0b0f14;
+      --card: rgba(255,255,255,0.06);
+      --card2: rgba(255,255,255,0.08);
+      --text: rgba(255,255,255,0.9);
+      --muted: rgba(255,255,255,0.72);
+      --faint: rgba(255,255,255,0.55);
+      --line: rgba(255,255,255,0.12);
+      --accent: #78c6ff;
+      --accent2: #b5ffda;
+      --shadow: 0 18px 60px rgba(0,0,0,0.45);
+      --radius: 18px;
+      --radius2: 22px;
+      --maxw: 1040px;
+    }
+    *{ box-sizing: border-box; }
+    html, body{ height: 100%; }
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(120,198,255,0.18), transparent 60%),
+        radial-gradient(900px 500px at 90% 30%, rgba(181,255,218,0.12), transparent 55%),
+        radial-gradient(800px 600px at 60% 95%, rgba(167,140,255,0.12), transparent 60%),
+        var(--bg);
+      line-height: 1.5;
+    }
+    a{ color: inherit; text-decoration: none; }
+    a:hover{ opacity: 0.92; }
+
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 28px 18px 64px;
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      border-radius: 999px;
+      backdrop-filter: blur(10px);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 22px rgba(120,198,255,0.55);
+    }
+    .links{
+      display:flex; gap: 10px; flex-wrap: wrap;
+      justify-content:flex-end;
+    }
+    .pill{
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .pill:hover{ background: rgba(255,255,255,0.06); color: var(--text); }
+
+    .hero{
+      margin-top: 22px;
+      display:grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+    }
+    @media (max-width: 860px){
+      .hero{ grid-template-columns: 1fr; }
+    }
+
+    .card{
+      border: 1px solid var(--line);
+      background: var(--card);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-inner{ padding: 22px; }
+
+    .headline{
+      font-size: 42px;
+      line-height: 1.06;
+      margin: 6px 0 12px;
+      letter-spacing: -0.6px;
+    }
+    @media (max-width: 520px){ .headline{ font-size: 34px; } }
+
+    .sub{
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 64ch;
+    }
+    .badges{
+      margin-top: 16px;
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .badge{
+      display:inline-flex;
+      gap: 8px;
+      align-items:center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      color: rgba(255,255,255,0.84);
+      font-size: 14px;
+    }
+    .badge b{ color: rgba(255,255,255,0.94); }
+
+    .cta{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.92);
+      font-weight: 650;
+      font-size: 14px;
+    }
+    .btn:hover{ background: rgba(255,255,255,0.08); }
+    .btn.primary{
+      border: 1px solid rgba(120,198,255,0.45);
+      background: linear-gradient(135deg, rgba(120,198,255,0.18), rgba(181,255,218,0.10));
+      box-shadow: 0 0 0 4px rgba(120,198,255,0.08) inset;
+    }
+
+    .side{
+      display:flex;
+      flex-direction:column;
+      gap: 12px;
+    }
+    .mini{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .mini h3{
+      margin:0 0 8px;
+      font-size: 15px;
+      letter-spacing: 0.2px;
+    }
+    .mini p{
+      margin:0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .mini .k{
+      margin-top: 10px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .stat{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.03);
+      border-radius: 14px;
+      padding: 12px;
+    }
+    .stat .num{
+      font-size: 18px;
+      font-weight: 750;
+      letter-spacing: -0.2px;
+    }
+    .stat .lab{
+      font-size: 12px;
+      color: var(--faint);
+      margin-top: 2px;
+    }
+
+    .grid{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+    @media (max-width: 860px){ .grid{ grid-template-columns: 1fr; } }
+    .section-title{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 10px;
+      margin: 26px 0 10px;
+    }
+    .section-title h2{
+      margin:0;
+      font-size: 18px;
+      letter-spacing: 0.2px;
+    }
+    .section-title span{
+      color: var(--faint);
+      font-size: 13px;
+    }
+
+    ul{
+      margin: 10px 0 0 18px;
+      padding:0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    li{ margin: 6px 0; }
+
+    .faq{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 860px){ .faq{ grid-template-columns: 1fr; } }
+    details{
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    summary{
+      cursor:pointer;
+      font-weight: 700;
+      color: rgba(255,255,255,0.9);
+      list-style:none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    details p{
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer{
+      margin-top: 26px;
+      color: var(--faint);
+      font-size: 13px;
+      text-align:center;
+    }
+    .divider{
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
+    .small{
+      color: var(--faint);
+      font-size: 13px;
+    }
+    code.inline{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--line);
+      padding: 2px 6px;
+      border-radius: 8px;
+      color: rgba(255,255,255,0.82);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Tyler • MCAT & Admissions</span>
+      </div>
+      <div class="links">
+        <a class="pill" href="#services">Services</a>
+        <a class="pill" href="#process">How it works</a>
+        <a class="pill" href="#faq">FAQ</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="card">
+        <div class="card-inner">
+          <div class="small">Cornell • Chemistry & Physics • 520 MCAT • T20 MD admit</div>
+          <h1 class="headline">MCAT tutoring & admissions coaching—built for efficiency.</h1>
+          <p class="sub">
+            I help students raise scores, write standout applications, and navigate the process with clarity.
+            My style is high-yield, structured, and personalized—so you know exactly what to do next.
+          </p>
+
+          <div class="badges">
+            <div class="badge"><b>MCAT:</b> 520 (132/128/132/128)</div>
+            <div class="badge"><b>Cycle:</b> 2025–26</div>
+            <div class="badge"><b>Results:</b> 9 interviews, 2 MD acceptances</div>
+            <div class="badge"><b>Background:</b> TA (Inorganic + Honors P-Chem)</div>
+          </div>
+
+          <div class="cta" id="contact">
+            <!-- Replace with your real links -->
+            <a class="btn primary" href="mailto:YOUR_EMAIL_HERE?subject=Tutoring%20Inquiry">Email me</a>
+            <a class="btn" href="https://calendly.com/YOUR_CALENDLY" target="_blank" rel="noreferrer">Book a free 15-min consult</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="small">
+            Tip: Replace <code class="inline">YOUR_EMAIL_HERE</code> and the Calendly/LinkedIn links above.
+            You can launch with email-only if you want.
+          </p>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="mini">
+          <h3>What I’m best at</h3>
+          <p>Turning confusion into a simple plan—and execution into results.</p>
+          <div class="k">
+            <div class="stat">
+              <div class="num">High-yield</div>
+              <div class="lab">what matters most</div>
+            </div>
+            <div class="stat">
+              <div class="num">Personalized</div>
+              <div class="lab">your gaps, your pace</div>
+            </div>
+            <div class="stat">
+              <div class="num">Systems</div>
+              <div class="lab">repeatable improvement</div>
+            </div>
+            <div class="stat">
+              <div class="num">Accountability</div>
+              <div class="lab">clear weekly targets</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>Quick note</h3>
+          <p>
+            I focus on teaching the “how”: passage strategy, pattern recognition, and efficient study design—plus
+            essay coaching that preserves your authentic voice while maximizing impact.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title" id="services">
+      <h2>Services</h2>
+      <span>Pick one or mix-and-match</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 8px;">MCAT Tutoring</h3>
+          <p class="small">Score gains through strategy + targeted practice.</p>
+          <ul>
+            <li>Diagnostic + gap analysis</li>
+            <li>Weekly plan + accountability</li>
+            <li>Passage approach and timing</li>
+            <li>High-yield content refreshers</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 8px;">Personal Statement & Secondaries</h3>
+          <p class="small">Cohesive narrative, authentic voice, stronger impact.</p>
+          <ul>
+            <li>Theme + structure development</li>
+            <li>Line edits (clarity, flow, tone)</li>
+            <li>“So what?” reflection coaching</li>
+            <li>Secondary strategy + reuse system</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 8px;">Premed Advising</h3>
+          <p class="small">Strategy for timeline, schools, and positioning.</p>
+          <ul>
+            <li>School list and risk-balancing</li>
+            <li>Activity descriptions + impact framing</li>
+            <li>Interview prep (MMI + traditional)</li>
+            <li>Application planning & pacing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title" id="process">
+      <h2>How it works</h2>
+      <span>Simple + structured</span>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 8px;">1) Quick consult</h3>
+          <p class="small">We clarify goals, timeline, and your biggest bottleneck.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 8px;">2) Personalized plan</h3>
+          <p class="small">You get a clear roadmap—what to do, when, and why.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <h3 style="margin:0 0 8px;">3) Execute + iterate</h3>
+          <p class="small">We meet, measure progress, and adjust fast.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title" id="faq">
+      <h2>FAQ</h2>
+      <span>Common questions</span>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Do you tutor beginners or only high scorers?</summary>
+        <p>I work with both. We’ll tailor the plan to your baseline—either building fundamentals or pushing toward top-percentile performance.</p>
+      </details>
+      <details>
+        <summary>Can you help if I’m short on time?</summary>
+        <p>Yes—my approach is designed for efficient studying: high-yield priorities, targeted drills, and smart review.</p>
+      </details>
+      <details>
+        <summary>What does essay coaching look like?</summary>
+        <p>We start with your key themes, then refine structure and reflection. I’ll help you keep your voice while making the writing clear and persuasive.</p>
+      </details>
+      <details>
+        <summary>How do I start?</summary>
+        <p>Use the “Email me” or “Book a consult” button above. Share your timeline, goals, and any materials you already have.</p>
+      </details>
+    </div>
+
+    <div class="footer">
+      <div class="divider"></div>
+      <div>© <span id="year"></span> Tyler • MCAT & Admissions</div>
+      <div class="small">Built with GitHub Pages • Minimal, fast, and mobile-friendly</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
